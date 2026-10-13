@@ -1,0 +1,55 @@
+{
+  "model": "LightGBM with current-week target and aligned price features",
+  "features": [
+    "sell_price",
+    "prev_price",
+    "markdown",
+    "drop_depth",
+    "price_vs_roll8",
+    "lag_1",
+    "lag_2",
+    "lag_4",
+    "lag_8",
+    "roll_4",
+    "roll_8",
+    "month",
+    "event_Sporting",
+    "event_Cultural",
+    "event_National",
+    "event_Religious",
+    "snap",
+    "dept_id",
+    "cat_id",
+    "store_id"
+  ],
+  "training_rows": 585214,
+  "validation_rows": 35987,
+  "validation_mae": 3.30274241760525,
+  "validation_rmse": 7.201933121670162,
+  "validation_lag1_baseline_mae": 3.812904660016117,
+  "later_test": {
+    "records": 3000,
+    "mae": 5.6342080267704056,
+    "rmse": 11.913002469264338,
+    "lag1_baseline_mae": 6.023
+  },
+  "pricing_simulation_rows": 3000,
+  "simulated_policy_profit": 39027.11520006013,
+  "simulated_hold_profit": 33021.860699034565,
+  "simulated_uplift": 0.18185693882480503,
+  "actions": {
+    "test_increase": 2311,
+    "apply_markdown": 671,
+    "hold": 18
+  },
+  "assumptions": {
+    "note": "SYNTHETIC - replace with real inventory/cost data in production",
+    "unit_cost_ratio": 0.62,
+    "min_margin": 0.1,
+    "max_discount": 0.3,
+    "initial_inventory_days": 45,
+    "review_weeks": 2,
+    "min_uplift": 0.05
+  },
+  "important_limitation": "The pricing policy is a model-based simulation using synthetic unit-cost assumptions. It is not a causal estimate of actual profit uplift. Counterfactual price response requires stronger validation or a controlled experiment."
+}

@@ -1,0 +1,50 @@
+{
+  "recommendation_rows": 3000,
+  "duplicate_keys": 0,
+  "invalid_prices": 0,
+  "negative_demand": 0,
+  "invalid_profit_rows": 0,
+  "discount_limit_violations": 0,
+  "minimum_margin_violations": 0,
+  "negative_estimated_margins": 0,
+  "policy_estimated_profit": 39027.11520006013,
+  "hold_estimated_profit": 33021.860699034565,
+  "saved_simulated_uplift_pct": 18.185693882480503,
+  "action_counts": {
+    "test_increase": 2311,
+    "apply_markdown": 671,
+    "hold": 18
+  },
+  "recommendation_weeks": [
+    11613
+  ],
+  "cost_sensitivity": [
+    {
+      "unit_cost_ratio": 0.5,
+      "recommended_profit": 50303.02150171182,
+      "hold_profit_same_demand": 46982.94292354869,
+      "uplift_pct": 7.0665615467417675
+    },
+    {
+      "unit_cost_ratio": 0.62,
+      "recommended_profit": 39027.11520006013,
+      "hold_profit_same_demand": 35707.036621897,
+      "uplift_pct": 9.298107298344437
+    },
+    {
+      "unit_cost_ratio": 0.7,
+      "recommended_profit": 31509.84433229234,
+      "hold_profit_same_demand": 28189.76575412922,
+      "uplift_pct": 11.777602577902924
+    },
+    {
+      "unit_cost_ratio": 0.8,
+      "recommended_profit": 22113.255747582596,
+      "hold_profit_same_demand": 18793.177169419476,
+      "uplift_pct": 17.66640386685441
+    }
+  ],
+  "issues_and_limitations": [
+    "Profit uplift is simulated; causal price response has not been validated."
+  ]
+}

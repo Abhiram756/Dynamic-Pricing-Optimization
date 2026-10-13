@@ -1,0 +1,83 @@
+{
+  "model": "Corrected LightGBM demand model",
+  "training_rows": 585214,
+  "validation_rows": 35987,
+  "training_week_range": [
+    11101,
+    11552
+  ],
+  "validation_week_range": [
+    11601,
+    11612
+  ],
+  "roll_4_verified": true,
+  "roll_8_verified": true,
+  "mae": 3.845261853160375,
+  "rmse": 8.875893825536561,
+  "naive_baseline_mae": 4.379692666796343,
+  "mae_improvement_percent": 12.202472965457947,
+  "feature_importance_top_15": [
+    {
+      "feature": "lag_1",
+      "importance": 1454
+    },
+    {
+      "feature": "lag_8",
+      "importance": 1308
+    },
+    {
+      "feature": "lag_4",
+      "importance": 1140
+    },
+    {
+      "feature": "lag_2",
+      "importance": 1072
+    },
+    {
+      "feature": "roll_4",
+      "importance": 758
+    },
+    {
+      "feature": "month",
+      "importance": 657
+    },
+    {
+      "feature": "sell_price",
+      "importance": 649
+    },
+    {
+      "feature": "roll_8",
+      "importance": 555
+    },
+    {
+      "feature": "price_vs_roll8",
+      "importance": 387
+    },
+    {
+      "feature": "store_id",
+      "importance": 283
+    },
+    {
+      "feature": "dept_id",
+      "importance": 159
+    },
+    {
+      "feature": "snap",
+      "importance": 150
+    },
+    {
+      "feature": "prev_price",
+      "importance": 129
+    },
+    {
+      "feature": "drop_depth",
+      "importance": 116
+    },
+    {
+      "feature": "event_National",
+      "importance": 43
+    }
+  ],
+  "pricing_profit_uplift_validated": false,
+  "pricing_note": "Do not interpret the previous simulated uplift as a verified business result. Align the next-week forecast horizon and candidate-price features before rerunning the optimizer."
+}

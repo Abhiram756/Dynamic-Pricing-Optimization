@@ -1,0 +1,9 @@
+{
+  "note": "SYNTHETIC - replace with real inventory/cost data in production",
+  "unit_cost_ratio": 0.62,
+  "min_margin": 0.1,
+  "max_discount": 0.3,
+  "initial_inventory_days": 45,
+  "review_weeks": 2,
+  "min_uplift": 0.05
+}
